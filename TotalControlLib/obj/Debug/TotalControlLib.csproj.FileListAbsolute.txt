@@ -12,3 +12,10 @@ C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\TotalControl
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\TotalControlLib\obj\Debug\TotalControlLib.csprojResolveAssemblyReference.cache
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\TotalControlLib\obj\Debug\TotalControlLib.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\TotalControlLib\obj\Debug\TotalControlLib.pdb
+C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\TotalControlLib.dll
+C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\TotalControlLib.pdb
+C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\TotalControlDal.dll
+C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\TotalControlDal.pdb
+C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\TotalControlLib\obj\Debug\TotalControlLib.csprojResolveAssemblyReference.cache
+C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\TotalControlLib\obj\Debug\TotalControlLib.dll
+C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\TotalControlLib\obj\Debug\TotalControlLib.pdb

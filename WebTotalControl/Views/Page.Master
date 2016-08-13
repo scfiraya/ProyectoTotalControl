@@ -17,26 +17,7 @@
 <body>
     <form id="frmPrincipal" runat="server">
     <header>
-        <div class="container">
-            <div class="row">
-                <img src="Image/total-control.png" id="logo" />
-            </div>
-            <div class="row">
-                <nav class="navbar navbar-default">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a class="glyphicon glyphicon-th-large" href="Default.aspx"></a>
-                        </li>
-                        <li>
-                            <a href="#">Administración</a>
-                        </li>
-                        <li>
-                            <a href="#">Registros</a>
-                        </li>                        
-                    </ul>
-                </nav>
-            </div>
-        </div>
+      
     </header>
 
     <section class="main container">

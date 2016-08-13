@@ -38,9 +38,6 @@
 
            </Columns>
        </asp:GridView>
-       <div id="margin">
-           <asp:Button ID="btnVer" runat="server" Text="VER" OnClick="btnVer_Click" />
-           <asp:Label ID="lblIdgvListas" runat="server" Text=""></asp:Label>
-       </div>
+       
    </div>
 </asp:Content>

@@ -16,23 +16,21 @@ namespace WebTotalControl.Views
             try
             {
                 int SesionActiva = (int)Session["SesionActiva"];
+
+                TotalControlLib.Ficha objconsulta = new TotalControlLib.Ficha();
+                DataTable dtFichas = new DataTable();
+                string consulta = "";
+
+                dtFichas = objconsulta.TraerFichasBll(consulta);
+                gvListas.DataSource = dtFichas;
+                gvListas.DataBind();
+
             }
             catch (Exception ex)
             {
                 Response.Redirect("~/views/Default.aspx");
             }
         }
-
-        protected void btnVer_Click(object sender, EventArgs e)
-        {
-            TotalControlLib.Ficha objconsulta = new TotalControlLib.Ficha();
-            DataTable dtFichas = new DataTable();
-            string consulta = "";
-
-            dtFichas = objconsulta.TraerFichasBll(consulta);
-            gvListas.DataSource = dtFichas;
-            gvListas.DataBind();
-        }
     }
 
-    }
+}
