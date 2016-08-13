@@ -1,0 +1,20 @@
+﻿/**
+    Hoja de estilos para vistas de registrador
+*/
+.img-profile {
+    width: 80%;
+    max-width: 200px;
+    margin: auto;
+}
+
+.profile-info {
+    margin-top: 4%;
+}
+
+.devices-list {
+    margin-top: 10px;
+}
+
+.submit-main {
+    margin: 40px 0;
+}

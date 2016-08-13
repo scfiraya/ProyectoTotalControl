@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32D3370C-6E5A-4C94-9745-F45E83C84BEA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebTotalControl</RootNamespace>
+    <AssemblyName>WebTotalControl</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Admin.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Registro.css" />
+    <Content Include="Content\Style.css" />
+    <Content Include="Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-2.2.1.js" />
+    <Content Include="Scripts\jquery-2.2.1.min.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="Views\Admin\CargaAprendiz.aspx" />
+    <Content Include="Views\Admin\CreacionFichas.aspx" />
+    <Content Include="Views\Admin\CreacionUsuario.aspx" />
+    <Content Include="Views\Admin\Default.aspx" />
+    <Content Include="Views\Admin\DetalleFichas.aspx" />
+    <Content Include="Views\Admin\GenerarReportes.aspx" />
+    <Content Include="Views\Admin\ListadoUsuarios.aspx" />
+    <Content Include="Views\Image\profile-default.png" />
+    <Content Include="Views\Image\total-control.png" />
+    <Content Include="Views\Default.aspx" />
+    <Content Include="Views\Admin\ListadoFichas.aspx" />
+    <Content Include="Views\Page.Master" />
+    <Content Include="Views\Registro\Default.aspx" />
+    <Content Include="Views\Registro\DetalleDispositivo.aspx" />
+    <Content Include="Views\Registro\DetalleIngreso.aspx" />
+    <Content Include="Views\Registro\DetalleSalida.aspx" />
+    <Content Include="Views\Registro\DetalleVisitante.aspx" />
+    <Content Include="Views\Registro\DetalleVisitanteIngreso.aspx" />
+    <Content Include="Views\Registro\DetalleVisitanteSalida.aspx" />
+    <Content Include="Views\Registro\Informes.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\CargaAprendiz.aspx.cs">
+      <DependentUpon>CargaAprendiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\CargaAprendiz.aspx.designer.cs">
+      <DependentUpon>CargaAprendiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\CreacionFichas.aspx.cs">
+      <DependentUpon>CreacionFichas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\CreacionFichas.aspx.designer.cs">
+      <DependentUpon>CreacionFichas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\CreacionUsuario.aspx.cs">
+      <DependentUpon>CreacionUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\CreacionUsuario.aspx.designer.cs">
+      <DependentUpon>CreacionUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\DetalleFichas.aspx.cs">
+      <DependentUpon>DetalleFichas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DetalleFichas.aspx.designer.cs">
+      <DependentUpon>DetalleFichas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\GenerarReportes.aspx.cs">
+      <DependentUpon>GenerarReportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\GenerarReportes.aspx.designer.cs">
+      <DependentUpon>GenerarReportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\ListadoUsuarios.aspx.cs">
+      <DependentUpon>ListadoUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\ListadoUsuarios.aspx.designer.cs">
+      <DependentUpon>ListadoUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\ListadoFichas.aspx.cs">
+      <DependentUpon>ListadoFichas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\ListadoFichas.aspx.designer.cs">
+      <DependentUpon>ListadoFichas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Page.Master.cs">
+      <DependentUpon>Page.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Page.Master.designer.cs">
+      <DependentUpon>Page.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registro\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Registro\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registro\DetalleDispositivo.aspx.cs">
+      <DependentUpon>DetalleDispositivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Registro\DetalleDispositivo.aspx.designer.cs">
+      <DependentUpon>DetalleDispositivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registro\DetalleIngreso.aspx.cs">
+      <DependentUpon>DetalleIngreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Registro\DetalleIngreso.aspx.designer.cs">
+      <DependentUpon>DetalleIngreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registro\DetalleSalida.aspx.cs">
+      <DependentUpon>DetalleSalida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Registro\DetalleSalida.aspx.designer.cs">
+      <DependentUpon>DetalleSalida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registro\DetalleVisitante.aspx.cs">
+      <DependentUpon>DetalleVisitante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Registro\DetalleVisitante.aspx.designer.cs">
+      <DependentUpon>DetalleVisitante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registro\DetalleVisitanteIngreso.aspx.cs">
+      <DependentUpon>DetalleVisitanteIngreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Registro\DetalleVisitanteIngreso.aspx.designer.cs">
+      <DependentUpon>DetalleVisitanteIngreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registro\DetalleVisitanteSalida.aspx.cs">
+      <DependentUpon>DetalleVisitanteSalida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Registro\DetalleVisitanteSalida.aspx.designer.cs">
+      <DependentUpon>DetalleVisitanteSalida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registro\Informes.aspx.cs">
+      <DependentUpon>Informes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Registro\Informes.aspx.designer.cs">
+      <DependentUpon>Informes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registro\Registro.Master.cs">
+      <DependentUpon>Registro.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Registro\Registro.Master.designer.cs">
+      <DependentUpon>Registro.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Scripts\jquery-2.2.1.min.map" />
+    <Content Include="Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Views\Admin\Admin.Master" />
+    <Content Include="Views\Registro\Registro.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TotalControlLib\TotalControlLib.csproj">
+      <Project>{ed297682-803b-4ae4-8885-2cc4a23480e5}</Project>
+      <Name>TotalControlLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1546</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2625/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

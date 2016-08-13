@@ -1,0 +1,14 @@
+D:\documentos\Extractos Efrain\TotalControl\TotalControlLib\bin\Debug\TotalControlLib.dll
+D:\documentos\Extractos Efrain\TotalControl\TotalControlLib\bin\Debug\TotalControlLib.pdb
+D:\documentos\Extractos Efrain\TotalControl\TotalControlLib\bin\Debug\TotalControlDal.dll
+D:\documentos\Extractos Efrain\TotalControl\TotalControlLib\bin\Debug\TotalControlDal.pdb
+D:\documentos\Extractos Efrain\TotalControl\TotalControlLib\obj\Debug\TotalControlLib.csprojResolveAssemblyReference.cache
+D:\documentos\Extractos Efrain\TotalControl\TotalControlLib\obj\Debug\TotalControlLib.dll
+D:\documentos\Extractos Efrain\TotalControl\TotalControlLib\obj\Debug\TotalControlLib.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\TotalControlLib\bin\Debug\TotalControlLib.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\TotalControlLib\bin\Debug\TotalControlLib.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\TotalControlLib\bin\Debug\TotalControlDal.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\TotalControlLib\bin\Debug\TotalControlDal.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\TotalControlLib\obj\Debug\TotalControlLib.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\TotalControlLib\obj\Debug\TotalControlLib.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\TotalControlLib\obj\Debug\TotalControlLib.pdb

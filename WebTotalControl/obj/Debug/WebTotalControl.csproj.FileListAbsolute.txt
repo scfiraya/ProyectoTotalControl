@@ -1,0 +1,18 @@
+D:\documentos\Extractos Efrain\TotalControl\WebTotalControl\bin\WebTotalControl.dll
+D:\documentos\Extractos Efrain\TotalControl\WebTotalControl\bin\WebTotalControl.pdb
+D:\documentos\Extractos Efrain\TotalControl\WebTotalControl\bin\TotalControlLib.dll
+D:\documentos\Extractos Efrain\TotalControl\WebTotalControl\bin\TotalControlDal.dll
+D:\documentos\Extractos Efrain\TotalControl\WebTotalControl\bin\TotalControlLib.pdb
+D:\documentos\Extractos Efrain\TotalControl\WebTotalControl\bin\TotalControlDal.pdb
+D:\documentos\Extractos Efrain\TotalControl\WebTotalControl\obj\Debug\WebTotalControl.csprojResolveAssemblyReference.cache
+D:\documentos\Extractos Efrain\TotalControl\WebTotalControl\obj\Debug\WebTotalControl.dll
+D:\documentos\Extractos Efrain\TotalControl\WebTotalControl\obj\Debug\WebTotalControl.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\WebTotalControl\bin\WebTotalControl.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\WebTotalControl\bin\WebTotalControl.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\WebTotalControl\bin\TotalControlLib.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\WebTotalControl\bin\TotalControlDal.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\WebTotalControl\bin\TotalControlLib.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\WebTotalControl\bin\TotalControlDal.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\WebTotalControl\obj\Debug\WebTotalControl.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\WebTotalControl\obj\Debug\WebTotalControl.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\WebTotalControl\obj\Debug\WebTotalControl.pdb
