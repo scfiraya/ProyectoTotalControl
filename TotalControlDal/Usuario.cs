@@ -14,9 +14,9 @@ namespace TotalControlDal
         public DataTable TraerIngresoUsuarioDal(string Usuario, string Contrasena)
         {
             string sql = "";
-         
 
-            sql = "select n.NombreRol from Rol n inner join RolUsuario r on n.IdRol=r.IdRol inner join Login l on r.IdUsuario=l.IdUsuario where l.Usuario ='" + Usuario + "' and l.contrasena='" + Contrasena + "'";
+
+            sql = "select n.NombreRol from Rol n inner join Usuario u on n.IdRol=u.IdRol inner join Login l on u.IdUsuaio=l.IdUsuario where l.Usuario ='" + Usuario + "' and l.contrasena='" + Contrasena + "'";
             
             DataTable dtUsuario = new DataTable();
             DataSet dsUsuario = new DataSet();
@@ -37,7 +37,7 @@ namespace TotalControlDal
             string sql = "";
 
 
-            sql = "Select Concat(u.Nombre,u.Apellido) as NombreUsuario ,u.NumeroIdentificacion,u.Cargo,n.NumeroFicha from Usuario u inner join UsuarioFicha f on u.IdUsuaio=f.IdUsuario inner join Ficha n on f.IdFicha=n.IdFicha where NumeroIdentificacion=" + Documento;
+            sql = "Select Concat(u.Nombre,u.Apellido) as NombreUsuario ,u.NumeroIdentificacion,u.Cargo,n.NumeroFicha from Usuario u inner join Ficha n on u.IdFicha=n.IdFicha where NumeroIdentificacion=" + Documento;
 
             DataTable dtUsuario = new DataTable();
             DataSet dsUsuario = new DataSet();

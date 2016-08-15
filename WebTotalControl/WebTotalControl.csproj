@@ -79,6 +79,7 @@
     <Content Include="Views\Admin\DetalleFichas.aspx" />
     <Content Include="Views\Admin\GenerarReportes.aspx" />
     <Content Include="Views\Admin\ListadoUsuarios.aspx" />
+    <Content Include="Views\Image\editarficha.gif" />
     <Content Include="Views\Image\profile-default.png" />
     <Content Include="Views\Image\total-control.png" />
     <Content Include="Views\Default.aspx" />
@@ -259,10 +260,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{8ac641ca-33b3-4df7-83d1-6d40d0ef111f}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TotalControlLib\TotalControlLib.csproj">
       <Project>{ed297682-803b-4ae4-8885-2cc4a23480e5}</Project>
       <Name>TotalControlLib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\SubirArchivo\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

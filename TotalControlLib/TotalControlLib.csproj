@@ -46,6 +46,10 @@
     <Compile Include="Registro\Ingreso.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{8ac641ca-33b3-4df7-83d1-6d40d0ef111f}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TotalControlDal\TotalControlDal.csproj">
       <Project>{4a5d380b-5d20-434f-8256-dbce4bc52ecf}</Project>
       <Name>TotalControlDal</Name>

@@ -1,0 +1,5 @@
+C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\Entidades\bin\Debug\Entidades.dll
+C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\Entidades\bin\Debug\Entidades.pdb
+C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.dll
+C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.pdb

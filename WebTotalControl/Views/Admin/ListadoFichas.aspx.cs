@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
+using TotalControlLib;
 
 namespace WebTotalControl.Views
 {
@@ -16,20 +17,44 @@ namespace WebTotalControl.Views
             try
             {
                 int SesionActiva = (int)Session["SesionActiva"];
-
                 TotalControlLib.Ficha objconsulta = new TotalControlLib.Ficha();
-                DataTable dtFichas = new DataTable();
+                DataTable dtLisFichas = new DataTable();
                 string consulta = "";
 
-                dtFichas = objconsulta.TraerFichasBll(consulta);
-                gvListas.DataSource = dtFichas;
+                dtLisFichas = objconsulta.TraerFichasBll(consulta);
+                gvListas.DataSource = dtLisFichas;
                 gvListas.DataBind();
+                
+
 
             }
             catch (Exception ex)
             {
                 Response.Redirect("~/views/Default.aspx");
             }
+            
+        }
+
+        protected void gvListas_Click(object sender, EventArgs e)
+        {
+
+            ImageButton FilaEditar = sender as ImageButton;
+            TableCell celda = (TableCell)FilaEditar.Parent;
+            GridViewRow filaEditar = (GridViewRow)celda.Parent;
+            string Resultado= "";
+            lblPrueba.Text =Resultado;
+            Resultado =gvListas.DataKeys[filaEditar.RowIndex]["IdFicha"].ToString();
+           
+            int  TraerNumFicha= Convert.ToInt32(Resultado);
+            if (TraerNumFicha != 0)
+            {
+   
+                Session["consulta"] = TraerNumFicha;
+            }
+            //lblNombre.Text = gvListas.DataKeys[filaEditar.RowIndex]["Nombre"].ToString();
+            //lblAmbiente.Text = gvListas.DataKeys[filaEditar.RowIndex]["Ambiente"].ToString();
+           
+
         }
     }
 

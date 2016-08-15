@@ -16,13 +16,15 @@ C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\WebTotalCont
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\WebTotalControl\obj\Debug\WebTotalControl.csprojResolveAssemblyReference.cache
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\WebTotalControl\obj\Debug\WebTotalControl.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\totalcontrol\WebTotalControl\obj\Debug\WebTotalControl.pdb
+C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\obj\Debug\WebTotalControl.csprojResolveAssemblyReference.cache
 C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\bin\WebTotalControl.dll.config
 C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\bin\WebTotalControl.dll
 C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\bin\WebTotalControl.pdb
+C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\bin\Entidades.dll
 C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\bin\TotalControlLib.dll
 C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\bin\TotalControlDal.dll
+C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\bin\Entidades.pdb
 C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\bin\TotalControlLib.pdb
 C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\bin\TotalControlDal.pdb
-C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\obj\Debug\WebTotalControl.csprojResolveAssemblyReference.cache
 C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\obj\Debug\WebTotalControl.dll
 C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\obj\Debug\WebTotalControl.pdb

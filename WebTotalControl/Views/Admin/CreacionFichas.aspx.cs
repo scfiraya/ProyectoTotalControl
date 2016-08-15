@@ -38,11 +38,11 @@ namespace WebTotalControl.Views
                 TotalControlLib.Ficha objSubir = new TotalControlLib.Ficha();
                 if (objSubir.SubirArchivoBll(Archivo))
                 {
-                    lblSuccess.Text = "archivo afectado";
+                    lblSuccess.Text = "La Carga Se realizo con exito";
                 }
                 else
                 {
-                    lblSuccess.Text = "falla subida";
+                    lblSuccess.Text = "Error al subir la base ";
                 }
             }
         }
@@ -53,7 +53,7 @@ namespace WebTotalControl.Views
             string Document = "";
             Boolean fileOK = false;
             //Ruta donde guardamos los archivos antes de Subirlos  
-            String path = Server.MapPath("~/SubirArchivos/");
+            String path = Server.MapPath("~/Views/SubirArchivo/");
 
             //Se valida si en la ruta se encuentra el archivo para subir 
             if (fuSubirArchivo.HasFile)
@@ -61,7 +61,7 @@ namespace WebTotalControl.Views
 
                 String fileExtension = System.IO.Path.GetExtension(fuSubirArchivo.FileName).ToLower();
                 //Delimitacion de extenciones
-                String[] allowedExtensions = { ".txt", ".png", ".jpeg", ".jpg" };
+                String[] allowedExtensions = { ".txt"};
                 for (int i = 0; i < allowedExtensions.Length; i++)
                 {
                     //Recorre cada extencion 

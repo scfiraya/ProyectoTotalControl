@@ -24,7 +24,38 @@ namespace WebTotalControl.Views
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
+            //TotalControlLib.Admin.Aprendiz objInsertar = new TotalControlLib.Admin.Aprendiz();
 
+
+            //string NomCom = txtNomAprendiz.Text;
+            //int NumDoc = Convert.ToInt32(txtNumDoc.Text);
+
+            //int TipoDoc = 0;
+
+            //if (ddlTipoDocumento.Text.Equals("Tipo"))
+            //{
+            //    TipoDoc = 0;
+            //}
+            //else
+            //{
+
+            //    TipoDoc = Convert.ToInt32((ddlTipoDocumento.Text));
+            //}
+
+            //int NumFicha = 0;
+
+            //if (ddlNumFicha.Text.Equals("NumFicha"))
+            //{
+            //    NumFicha = 0;
+            //}
+            //else
+            //{
+            //    NumFicha = Convert.ToInt32((ddlNumFicha.Text));
+            //}
+
+            //objInsertar.InsertarAprendizBll(NumDoc, NomCom, TipoDoc, NumFicha);
+
+            //lblNomAprendiz.Text = "Carga Exitosa";
         }
     }
 }

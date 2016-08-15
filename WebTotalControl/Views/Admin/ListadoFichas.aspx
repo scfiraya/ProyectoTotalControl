@@ -1,43 +1,27 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="ListadoFichas.aspx.cs" Inherits="WebTotalControl.Views.ListadoFichas" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="ListadoFichas.aspx.cs" Inherits="WebTotalControl.Views.ListadoFichas" EnableEventValidation="false" %>
+
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-   <script type="text/javascript">
-       function CheckOn(objRef) {
-
-           var row = objRef.parentNode.parentNode;
-           if (objRef.cheked) {
-               row.style.backgroundcolor = "red";
-           }
-           else {
-               row.style.backgroundcolor = "Write";
-           }
-
-           var gvListas = row.parentNode;
-       }
-
-
-
-   </script>
 
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <h2>Listado Fichas </h2>
    <div>
-       <asp:GridView ID="gvListas" runat="server" AutoGenerateColumns="false" HeaderStyle-BackColor="WhiteSmoke" RowStyle-HorizontalAlign="Justify">
+       <asp:GridView ID="gvListas" runat="server" AutoGenerateColumns="false" HeaderStyle-BackColor="WhiteSmoke" RowStyle-HorizontalAlign="Justify" DataKeyNames="IdFicha,NumeroFicha,Nombre" >
            <Columns>
-               
-               <asp:TemplateField>
-                   <ItemTemplate>
-                       <asp:CheckBox ID="CheckBox1" runat="server" Oneclick="chekOn(this)" />
-                   </ItemTemplate>
-               </asp:TemplateField>
-               <asp:BoundField HeaderText="Número de Ficha" DataField="NumeroFicha" HeaderStyle-HorizontalAlign="Justify" />
-               <asp:BoundField HeaderText="Programa de Formación" DataField="Nombre" />
-               <asp:HyperLinkField DataNavigateUrlFields="IdFicha" DataNavigateUrlFormatString="DetalleFichas.aspx" HeaderText="Detalle" Text="Ver" DataTextFormatString="{0:c}" />
+               <asp:TemplateField  HeaderText="Seleccionar">
+                        <ItemTemplate>
+                            <asp:ImageButton ImageUrl="../Image/editarficha.gif" AlternateText="Editar"  runat="server"  OnClick="gvListas_Click" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+              
 
+               <asp:BoundField HeaderText="Número de Ficha" DataField="NumeroFicha" HeaderStyle-HorizontalAlign="Justify" />
+                <asp:BoundField HeaderText="Ficha" DataField="Nombre" HeaderStyle-HorizontalAlign="Justify" />
+               <asp:HyperLinkField DataNavigateUrlFields="IdFicha" DataNavigateUrlFormatString="DetalleFichas.aspx" HeaderText="Detalle" Text="Ver" DataTextFormatString="{0:c}" />
            </Columns>
        </asp:GridView>
-       
+       <asp:Label ID="lblPrueba" runat="server" Text=""></asp:Label>
    </div>
 </asp:Content>

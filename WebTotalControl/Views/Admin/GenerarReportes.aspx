@@ -26,12 +26,8 @@
         <div class="form-group">
             <asp:Label ID="lblNumFicha" runat="server" CssClass="col-xs-6" Text="Número Ficha"></asp:Label>
             <div class="col-xs-6">
-                <asp:DropDownList ID="ddlFicha" runat="server">
-                    <asp:ListItem Enabled="false">Seleccionar</asp:ListItem>
-                    <asp:ListItem Value="NumeroFicha">901541</asp:ListItem>
-                    <asp:ListItem>9015418</asp:ListItem>
-                    <asp:ListItem>900084</asp:ListItem>
-                </asp:DropDownList>
+                <asp:DropDownList ID="ddlNumFicha" runat="server"  DataSourceID="SqlDataSource1" DataTextField="NumeroFicha" DataValueField="NumeroFicha"></asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Conexion %>" SelectCommand="SELECT [NumeroFicha] FROM [Ficha]"></asp:SqlDataSource>
 
                 <asp:TextBox ID="txtFicha" runat="server"></asp:TextBox>
 

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using TotalControlDal;
+using Entidades;
 
 namespace TotalControlLib
 {
@@ -18,7 +19,7 @@ namespace TotalControlLib
             return dtFichas;
         }
 
-        public DataTable TraerDetalleFichaBll(string Detalle)
+        public DataTable TraerDetalleFichaBll(String Detalle)
         {
             TotalControlDal.Ficha obDatos = new TotalControlDal.Ficha();
             DataTable dtFichas = new DataTable();
@@ -38,7 +39,19 @@ namespace TotalControlLib
         {
             TotalControlDal.Ficha objSubir = new TotalControlDal.Ficha();
             return objSubir.SubirArchivo(Archivo);
+        }
 
+        public FichaEntidad TraerNumFicha(int NumFicha)
+        {
+            TotalControlDal.Ficha objSubir = new TotalControlDal.Ficha();
+            return objSubir.TraerNumFicha(NumFicha);
+        }
+        public UsuarioEntidad TraerDatosFichaBll(int NumFicha)
+        {
+
+            TotalControlDal.Ficha objDatos = new TotalControlDal.Ficha();
+            return objDatos.TraerDatosFicha(NumFicha);
         }
     }
 }
+

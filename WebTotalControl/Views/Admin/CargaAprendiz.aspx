@@ -8,14 +8,10 @@
         <div class="form-group">
             <asp:Label ID="lblNumFicha" runat="server" Cssclass="col-xs-6" Text="Número Ficha"></asp:Label>
             <div class="col-xs-6">
-                <%-- colocar dropDownlist --%>
-                <select id="Selectficha" class="form-control">
-                    <option>Seleccionar</option>
-                    <option>901541</option>
-                    <option>901542</option>
-                    <option>900084</option>
-                </select>
-            </div>
+                <asp:DropDownList ID="ddlNumFicha" runat="server"  DataSourceID="SqlDataSource1" DataTextField="NumeroFicha" DataValueField="NumeroFicha"></asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Conexion %>" SelectCommand="SELECT [NumeroFicha] FROM [Ficha]"></asp:SqlDataSource>
+
+               </div>
         </div>
 
         <div class="form-group">
@@ -29,13 +25,8 @@
         <div class="form-group">
             <asp:Label ID="lblTipoDoc" runat="server" Cssclass="col-xs-6" Text="Tipo de Documento"></asp:Label>
             <div class="col-xs-6">
-                 <%-- colocar dropDownlist --%>
-                <select id="SelectTipoD" class="form-control">
-                    <option>Seleccionar</option>
-                    <option>CC</option>
-                    <option>CE</option>
-                    <option>TI</option>
-                </select>
+                <asp:DropDownList ID="ddlTipoDocumento" runat="server"  DataSourceID="SqlDataSource2" DataTextField="Tipo" DataValueField="Tipo"></asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Conexion %>" SelectCommand="SELECT [Tipo] FROM [TipoDocumento]"></asp:SqlDataSource>
             </div>
         </div>
 
