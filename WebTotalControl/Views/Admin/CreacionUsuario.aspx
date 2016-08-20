@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <h1>Creación Usuario</h1>
+    <h1> <strong>Creación Usuario</strong> </h1> <hr />
 
     <div class="form-horizontal" runat="server">
 
@@ -27,45 +27,31 @@
         <div class="form-group">
             <asp:Label ID="lblTipoDoc" runat="server" Text="Tipo de Documento" class="col-xs-6"></asp:Label>
             <div class="col-xs-6">
-                <%-- arreglar para que lo traiga de la base de datos  --%>
                 <asp:DropDownList ID="ddlTipoDoc" runat="server" class="form-control">
-                    <asp:ListItem Selected="FALSE">Seleccionar</asp:ListItem>
-                    <asp:ListItem Value="1">Cédula de Ciudadanía</asp:ListItem>
-                    <asp:ListItem Value="2">Tarjeta de Identidad</asp:ListItem>
-                    <asp:ListItem Value="3">Cédula de Extranjería</asp:ListItem>
                 </asp:DropDownList>
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group">  
             <asp:Label ID="lblNumDoc" runat="server" Text="Número de Documento" class="col-xs-6"></asp:Label>
-            <div class="col-xs-6">
+            <div class="col-xs-6"> 
                 <asp:TextBox ID="txtNumDoc" runat="server" class="form-control" placeholder="Ingrese su número de documento" required="required"></asp:TextBox>
                 <asp:RegularExpressionValidator ID="revNumDoc" runat="server" ErrorMessage="Ingreso un caracter invalido." ControlToValidate="txtNumDoc" Display="Dynamic" ValidationGroup="grupoval1" ValidationExpression="^[0-9 ]*$"></asp:RegularExpressionValidator>
             </div>
-        </div>
+        </div> 
 
         <div class="form-group">
             <asp:Label ID="lblCargo" runat="server" Text="Cargo" class="col-xs-6"></asp:Label>
             <div class="col-xs-6">
-                 <%-- arreglar para que lo traiga de la base de datos  --%>
                 <asp:DropDownList ID="ddlCargo" runat="server" class="form-control">
-                    <asp:ListItem Selected="FALSE">Seleccionar</asp:ListItem>
-                    <asp:ListItem Value="1">Aprendiz</asp:ListItem>
-                    <asp:ListItem Value="2">Instructor</asp:ListItem>
-                    <asp:ListItem Value="3">Vigilante</asp:ListItem>
                 </asp:DropDownList>
-            </div>
+            </div> 
         </div>
 
         <div class="form-group">
             <asp:Label ID="lblRol" runat="server" Text="Rol" class="col-xs-6"></asp:Label>
             <div class="col-xs-6">
-                 <%-- arreglar para que lo traiga de la base de datos  --%>
                 <asp:DropDownList ID="ddlRol" runat="server" class="form-control">
-                    <asp:ListItem Selected="FALSE">Seleccionar</asp:ListItem>
-                    <asp:ListItem Value="1">Administrador</asp:ListItem>
-                    <asp:ListItem Value="2">Registrador</asp:ListItem>
                 </asp:DropDownList>
             </div>
         </div>
@@ -98,15 +84,16 @@
             <asp:Label ID="lblEstado" runat="server" Text="Estado" class="col-xs-6"></asp:Label>
             <div class="col-xs-6">
                 <asp:CheckBox ID="cbEstado" runat="server" />
+                <asp:Label ID="lblActivo" runat="server" Text="Activo"></asp:Label>
             </div>
         </div>
 
-        <div class="text-center">
-            <asp:Button ID="btnGuardar" runat="server" Text="Guardar" CssClass="btn btn-primary" CausesValidation="true" ValidationGroup="grupoval1" OnClick="btnGuardar_Click" />
-            <asp:Button ID="btnInserter" runat="server" Text="Insertar" CssClass="btn btn-primary" CausesValidation="true" ValidationGroup="grupoval1" OnClick="btnInserter_Click" />
+        
+        <div class="text-center">            
+            <asp:Button ID="btnInsertar" runat="server" Text="Insertar" CssClass="btn btn-primary" CausesValidation="true" ValidationGroup="grupoval1" OnClick="btnInserter_Click" />
             <asp:Button ID="btnModificar" runat="server" Text="Modificar" CssClass="btn btn-primary" CausesValidation="true" ValidationGroup="grupoval1" OnClick="btnModificar_Click" />
             <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" CssClass="btn btn-primary" CausesValidation="true" ValidationGroup="grupoval1" OnClick="btnEliminar_Click" />
-        </div>
+        </div> <br /> <hr />
 
         <asp:Label ID="lblValidacion" runat="server" Text=""></asp:Label>
     </div>

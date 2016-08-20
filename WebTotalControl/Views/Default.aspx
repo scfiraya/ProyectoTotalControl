@@ -20,8 +20,8 @@
                 <asp:TextBox ID="txtContraseña" runat="server" type="password" Cssclass="form-control" placeholder="Ingrese su contraseña"></asp:TextBox>
             </div>
             <div class="text-center">
-                <asp:Button ID="btnIngresar" runat="server" Text="Iniciar Sesión" type="submit" Cssclass="btn btn-primary" ValidationGroup="grupoval1" causesvalidation="true" OnClick="btnIngresar_Click" />
-                <asp:Label ID="lblError" runat="server" Text="" CssClass="alert-info"></asp:Label>
+                <asp:Button ID="btnIngresar" runat="server" Text="Iniciar Sesión" type="submit" Cssclass="btn btn-primary" ValidationGroup="grupoval1" causesvalidation="true" OnClick="btnIngresar_Click" /> <hr />
+                <h5><strong><asp:Label ID="lblError" runat="server" Text="" CssClass="alert-info"></asp:Label></strong></h5>
             </div>
         </div>
     </div>

@@ -247,22 +247,22 @@ namespace WebTotalControl.Views.Admin {
         protected global::System.Web.UI.WebControls.CheckBox cbEstado;
         
         /// <summary>
-        /// Control btnGuardar.
+        /// Control lblActivo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGuardar;
+        protected global::System.Web.UI.WebControls.Label lblActivo;
         
         /// <summary>
-        /// Control btnInserter.
+        /// Control btnInsertar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnInserter;
+        protected global::System.Web.UI.WebControls.Button btnInsertar;
         
         /// <summary>
         /// Control btnModificar.

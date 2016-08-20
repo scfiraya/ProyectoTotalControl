@@ -28,3 +28,14 @@ C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTo
 C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\bin\TotalControlDal.pdb
 C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\obj\Debug\WebTotalControl.dll
 C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\WebTotalControl\obj\Debug\WebTotalControl.pdb
+C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\WebTotalControl\bin\WebTotalControl.dll
+C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\WebTotalControl\bin\WebTotalControl.pdb
+C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\WebTotalControl\bin\Entidades.dll
+C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\WebTotalControl\bin\TotalControlLib.dll
+C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\WebTotalControl\bin\TotalControlDal.dll
+C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\WebTotalControl\bin\Entidades.pdb
+C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\WebTotalControl\bin\TotalControlLib.pdb
+C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\WebTotalControl\bin\TotalControlDal.pdb
+C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\WebTotalControl\obj\Debug\WebTotalControl.csprojResolveAssemblyReference.cache
+C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\WebTotalControl\obj\Debug\WebTotalControl.dll
+C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\WebTotalControl\obj\Debug\WebTotalControl.pdb
