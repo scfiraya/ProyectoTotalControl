@@ -72,7 +72,6 @@
     <Content Include="Scripts\jquery-2.2.1.js" />
     <Content Include="Scripts\jquery-2.2.1.min.js" />
     <Content Include="Scripts\npm.js" />
-    <Content Include="Views\Admin\CargaAprendiz.aspx" />
     <Content Include="Views\Admin\CreacionFichas.aspx" />
     <Content Include="Views\Admin\CreacionUsuario.aspx" />
     <Content Include="Views\Admin\Default.aspx" />
@@ -80,10 +79,12 @@
     <Content Include="Views\Admin\GenerarReportes.aspx" />
     <Content Include="Views\Admin\ListadoUsuarios.aspx" />
     <Content Include="Views\Image\editarficha.gif" />
+    <Content Include="Views\Image\IconoRegresar.png" />
     <Content Include="Views\Image\profile-default.png" />
     <Content Include="Views\Image\total-control.png" />
     <Content Include="Views\Default.aspx" />
     <Content Include="Views\Admin\ListadoFichas.aspx" />
+    <Content Include="Views\CerrarSesion.aspx" />
     <Content Include="Views\Page.Master" />
     <Content Include="Views\Registro\Default.aspx" />
     <Content Include="Views\Registro\DetalleDispositivo.aspx" />
@@ -105,13 +106,6 @@
     </Compile>
     <Compile Include="Views\Admin\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\CargaAprendiz.aspx.cs">
-      <DependentUpon>CargaAprendiz.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Admin\CargaAprendiz.aspx.designer.cs">
-      <DependentUpon>CargaAprendiz.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\CreacionFichas.aspx.cs">
       <DependentUpon>CreacionFichas.aspx</DependentUpon>
@@ -168,6 +162,13 @@
     </Compile>
     <Compile Include="Views\Admin\ListadoFichas.aspx.designer.cs">
       <DependentUpon>ListadoFichas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CerrarSesion.aspx.cs">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CerrarSesion.aspx.designer.cs">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Page.Master.cs">
       <DependentUpon>Page.Master</DependentUpon>

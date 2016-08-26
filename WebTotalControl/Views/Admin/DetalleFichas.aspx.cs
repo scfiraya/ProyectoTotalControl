@@ -31,13 +31,17 @@ namespace WebTotalControl.Views
             TotalControlLib.Ficha objFichaBll = new TotalControlLib.Ficha();
 
             int NumFicha = TraerFicha;
-            FichaEntidad FichaE = objFichaBll.TraerNumFicha(NumFicha);
+            ProgramaEntidad ProgramaE = objFichaBll.TraerNumFicha(NumFicha);
             UsuarioEntidad Usuario=objFichaBll.TraerDatosFichaBll(NumFicha);
 
-            lblPrograma.Text = FichaE.Nombre;
+            lblPrograma.Text = ProgramaE.NombrePrograma;
             lblNombre.Text =Usuario.Nombre+ Usuario.Apellido;
-            
-            
+ 
+        }
+
+        protected void Regresar_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("ListadoFichas.aspx", false);
         }
     }
 }

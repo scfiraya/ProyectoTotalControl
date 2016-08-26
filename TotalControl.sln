@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTotalControl", "WebTotalControl\WebTotalControl.csproj", "{32D3370C-6E5A-4C94-9745-F45E83C84BEA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TotalControlLib", "TotalControlLib\TotalControlLib.csproj", "{ED297682-803B-4AE4-8885-2CC4A23480E5}"

@@ -41,7 +41,7 @@ namespace TotalControlLib
             return objSubir.SubirArchivo(Archivo);
         }
 
-        public FichaEntidad TraerNumFicha(int NumFicha)
+        public ProgramaEntidad TraerNumFicha(int NumFicha)
         {
             TotalControlDal.Ficha objSubir = new TotalControlDal.Ficha();
             return objSubir.TraerNumFicha(NumFicha);
@@ -51,6 +51,21 @@ namespace TotalControlLib
 
             TotalControlDal.Ficha objDatos = new TotalControlDal.Ficha();
             return objDatos.TraerDatosFicha(NumFicha);
+        }
+
+        public DataTable TraerNombreFichaBll()
+        {
+            TotalControlDal.Ficha objNomFicha = new TotalControlDal.Ficha();
+            DataTable dtNombreFicha = new DataTable();
+            dtNombreFicha=objNomFicha.TraerNombreFichaDal();
+            return dtNombreFicha;
+        }
+
+        public void CreacionFichaLib(int NumFicha, int Ambiente, int IdPrograma)
+        {
+            TotalControlDal.Ficha objInsertar = new TotalControlDal.Ficha();
+
+            objInsertar.CreacionFichaDal(NumFicha, Ambiente, IdPrograma);
         }
     }
 }

@@ -16,19 +16,29 @@ namespace WebTotalControl.Views
             try
             {
                 int SesionActiva = (int)Session["SesionActiva"];
-            }
+                if (!IsPostBack)
+                {
+                    TotalControlLib.Ficha objMostrarNomFicha = new TotalControlLib.Ficha();
+
+                    DataTable dtNomFicha = new DataTable();
+                    dtNomFicha = objMostrarNomFicha.TraerNombreFichaBll();
+                    ddlPrograma.DataSource = dtNomFicha;
+                    ddlPrograma.DataTextField = "NombrePrograma";
+                    ddlPrograma.DataValueField = "IdPrograma";
+                    ddlPrograma.DataBind();
+
+           }
+
+                }
+
+            
             catch (Exception ex)
             {
                 Response.Redirect("~/views/Default.aspx");
             }
         }
 
-        protected void btnGuardar_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
+       
         protected void btnSubir_Click(object sender, EventArgs e)
         {
             //Creeo una variable llamo el metodo
@@ -93,8 +103,35 @@ namespace WebTotalControl.Views
             return Document;
         }
 
-        protected void ddlFicha_SelectedIndexChanged(object sender, EventArgs e)
+        protected void btncrearFicha_Click(object sender, EventArgs e)
         {
+            try
+            {
+                TotalControlLib.Ficha objCrearFichaLib = new TotalControlLib.Ficha();
+
+                int NumFicha = Convert.ToInt32(txtCodFicha.Text);
+                int Ambiente = Convert.ToInt32(txtAmbiente.Text);
+
+                int IdPrograma = 0;
+
+
+                if (ddlPrograma.Text.Equals(""))
+                {
+                    IdPrograma = 0;
+                }
+                else
+                {
+                    IdPrograma = Convert.ToInt32(ddlPrograma.Text);
+                }
+
+                objCrearFichaLib.CreacionFichaLib(NumFicha, Ambiente, IdPrograma);
+                lblSuccess.Text = "El registro se actualizo exitosamente.";
+          
+            }
+            catch (Exception ex)
+            {
+                lblSuccess.Text = "Error al guardar el registro. Detalle del error: " + ex.Message.ToString();
+            }
 
         }
     }

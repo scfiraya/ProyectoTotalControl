@@ -17,6 +17,7 @@ namespace WebTotalControl.Views
             try
             {
                 int SesionActiva = (int)Session["SesionActiva"];
+
                 TotalControlLib.Ficha objconsulta = new TotalControlLib.Ficha();
                 DataTable dtLisFichas = new DataTable();
                 string consulta = "";
@@ -29,7 +30,9 @@ namespace WebTotalControl.Views
 
             }
             catch (Exception ex)
+                
             {
+                //lblPrueba.Text = ex.Message.ToString();
                 Response.Redirect("~/views/Default.aspx");
             }
             
@@ -50,9 +53,9 @@ namespace WebTotalControl.Views
             {
    
                 Session["consulta"] = TraerNumFicha;
+                //Response.Redirect("DetalleFichas.aspx");
             }
-            //lblNombre.Text = gvListas.DataKeys[filaEditar.RowIndex]["Nombre"].ToString();
-            //lblAmbiente.Text = gvListas.DataKeys[filaEditar.RowIndex]["Ambiente"].ToString();
+          
            
 
         }

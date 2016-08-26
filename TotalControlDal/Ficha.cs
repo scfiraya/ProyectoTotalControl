@@ -18,7 +18,7 @@ namespace TotalControlDal
            
             string sql = "";
 
-            sql = "select * from Ficha";
+            sql = "select f.IdFicha,f.NumeroFicha,f.Ambiente,p.NombrePrograma from Ficha f inner join Programa p on f.IdPrograma=p.IdPrograma";
 
 
             DataTable dtFichas = new DataTable();
@@ -38,7 +38,7 @@ namespace TotalControlDal
         {
             string sql = "";
 
-            sql = "select u.Nombre, u.Apellido,u.NumeroIdentificacion  from Usuario u inner join Ficha f on u.IdFicha= f.IdFicha where f.IdFicha=" + Detalle + "and u.Cargo='Aprendiz'";
+            sql = "select u.Nombre, u.Apellido,u.NumeroIdentificacion  from Usuario u inner join Ficha f on u.IdFicha= f.IdFicha where f.IdFicha=" + Detalle + "and u.IdCargo=200";
 
 
             DataTable dtFichas = new DataTable();
@@ -96,30 +96,30 @@ namespace TotalControlDal
         //    return Ficha;
         //}
 
-        public FichaEntidad TraerNumFicha(int NumFicha)
+        public ProgramaEntidad TraerNumFicha(int NumFicha)
         {            
             string sql = "";
-            sql = "select f.Nombre from  ficha f where IdFicha=" + NumFicha;
+            sql = "select f.IdPrograma, p.NombrePrograma from Ficha f inner join Programa p on IdFicha="+NumFicha+" and f.IdPrograma=p.IdPrograma";
             SqlConnection Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString);
             Connection.Open();
             SqlCommand Comando = Connection.CreateCommand();
             Comando.CommandText = sql;
 
             SqlDataReader reader = Comando.ExecuteReader();
-            FichaEntidad FichaE = new FichaEntidad();
+            ProgramaEntidad ProgramaE = new ProgramaEntidad();
             while (reader.Read())
             {               
               
-                FichaE.Nombre = reader.GetString(0) == null ? string.Empty : reader.GetString(0);
+                ProgramaE.NombrePrograma = reader.GetString(1) == null ? string.Empty : reader.GetString(1);
 
             }
-            return FichaE;
+            return ProgramaE;
         }
 
         public UsuarioEntidad TraerDatosFicha(int NumFicha)
         {
             string sql = "";
-            sql = "select u.Nombre,u.Apellido,f.Nombre from Usuario u inner join ficha f on u.IdFicha=f.IdFicha where u.IdFicha=" + NumFicha + "and u.Cargo='Instructor'";
+            sql = "select  u.Nombre,u.Apellido from Usuario u where IdCargo=201 and IdFicha="+NumFicha;
             SqlConnection Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString);
             Connection.Open();
             SqlCommand Comando = Connection.CreateCommand();
@@ -150,5 +150,41 @@ namespace TotalControlDal
             //retorna un valor, devuelve el numero de filas afectadas
             return Comando.ExecuteNonQuery() >= 0;
         }
+
+        public DataTable TraerNombreFichaDal()
+        {
+            string sql = "";
+            sql = "Select IdPrograma,NombrePrograma From Programa";
+
+            DataTable dtNombreFicha = new DataTable();
+            DataSet dsNombreFicha = new DataSet();
+            SqlConnection Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString);
+            Connection.Open();
+            IDbCommand Comando = Connection.CreateCommand();
+            Comando.CommandText = sql;
+            SqlDataAdapter Adaptador = new SqlDataAdapter((SqlCommand)Comando);
+            Adaptador.Fill(dsNombreFicha);
+            Connection.Close();
+            dtNombreFicha = dsNombreFicha.Tables[0];
+            return dtNombreFicha;
+        }
+
+        public void CreacionFichaDal(int NumFicha, int Ambiente, int IdPrograma)
+        {
+            string sql = "";
+            sql = "insert into Ficha (NumeroFicha,Ambiente,IdPrograma) values("+NumFicha+","+Ambiente+","+IdPrograma+")";
+
+            SqlConnection Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString);
+            Connection.Open();
+
+            IDbCommand Comando = Connection.CreateCommand();
+            Comando.CommandType = CommandType.Text;
+            Comando.CommandText = sql;
+            Comando.ExecuteNonQuery();
+            Connection.Close();
+        }
+
+
+
     }
 }

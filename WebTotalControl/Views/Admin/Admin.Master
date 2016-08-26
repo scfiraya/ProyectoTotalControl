@@ -24,13 +24,12 @@
                     <nav class="navbar navbar-default">
                         <ul class="nav navbar-nav">
                             <li>
-                                <a class="glyphicon glyphicon-th-large" href="../Default.aspx"></a>
+                                <a class="glyphicon glyphicon-off" href="../CerrarSesion.aspx" onclick="btnLimpiar_Click"></a>
                             </li>
                             <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestión de Fichas<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="ListadoFichas.aspx">Listado Fichas</a></li>
                                     <li><a href="CreacionFichas.aspx">Creacion de Fichas</a></li>
-                                    <li><a href="CargaAprendiz.aspx">Carga de Aprendiz</a></li>
                                 </ul>
                             </li>
                             <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestión de Usuarios<span class="caret"></span></a>
@@ -41,7 +40,7 @@
                             </li>
                             <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestión de Registros<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="GenerarReportes.aspx">Generación de Reportes</a></li>
+                                    <li><a href="GenerarReportes.aspx"></a></li>
                                 </ul>
                             </li>
                         </ul>

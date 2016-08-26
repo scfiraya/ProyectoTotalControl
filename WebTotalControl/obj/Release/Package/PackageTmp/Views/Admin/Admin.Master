@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="WebTotalControl.Views.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>TotalControl - Administración</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/Style.css" rel="stylesheet" />
+    <link href="../../Content/Admin.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <img src="../Image/total-control.png" id="logo" />
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-default">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a class="glyphicon glyphicon-home" href="../CerrarSesion.aspx" onclick="btnLimpiar_Click"></a>
+                            </li>
+                            <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestión de Fichas<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="ListadoFichas.aspx">Listado Fichas</a></li>
+                                    <li><a href="CreacionFichas.aspx">Creacion de Fichas</a></li>
+                                </ul>
+                            </li>
+                            <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestión de Usuarios<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="ListadoUsuarios.aspx">Listado Usuarios</a></li>
+                                    <li><a href="CreacionUsuario.aspx">Crear Usuario</a></li>
+                                </ul>
+                            </li>
+                            <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestión de Registros<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="GenerarReportes.aspx"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="main container">
+            <div class="row">
+                <article class="col-xs-12">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </article>
+            </div>
+        </section>
+
+        <footer class="container-fluid">
+            <div class="row text-center">
+                <h5>&copy; ADSI. 2016</h5>
+            </div>
+        </footer>
+        <script src="../../Scripts/jquery-2.2.1.min.js"></script>
+        <script src="../../Scripts/bootstrap.min.js"></script>
+        
+    </form>
+</body>
+</html>

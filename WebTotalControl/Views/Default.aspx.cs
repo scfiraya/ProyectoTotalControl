@@ -34,6 +34,8 @@ namespace WebTotalControl.Views
                 Contrasena = txtContraseña.Text;
                 dtUsuario = objconsulta.TraerIngresoUsuarioBll(NombreUsuario,Contrasena);
 
+                
+
                 Rol=dtUsuario.Rows[0][0].ToString();
 
                 if (Rol=="Administrador")
@@ -42,7 +44,8 @@ namespace WebTotalControl.Views
                     Response.Redirect("Admin/Default.aspx", false);
 
                     Session["SesionActiva"] = 1;
-                }
+
+                  }
                 else {
                     if (Rol=="Registrador" )
                     {
@@ -50,12 +53,16 @@ namespace WebTotalControl.Views
                     }
                 }
             }
-            catch (Exception )
+            catch (Exception ex)
                 {
                   
-                    lblError.Text = "Usuario No tiene Permisos";
+                    lblError.Text = ex.Message.ToString();
                     
                 }
+
+          
         }
     }
+
+
 }

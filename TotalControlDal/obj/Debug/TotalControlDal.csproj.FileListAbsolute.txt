@@ -21,3 +21,10 @@ C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalContro
 C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\TotalControlDal\obj\Debug\TotalControlDal.csprojResolveAssemblyReference.cache
 C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\TotalControlDal\obj\Debug\TotalControlDal.dll
 C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\TotalControlDal\obj\Debug\TotalControlDal.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Debug\TotalControlDal.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Debug\TotalControlDal.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Debug\Entidades.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Debug\Entidades.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\obj\Debug\TotalControlDal.csprojResolveAssemblyReference.cache
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\obj\Debug\TotalControlDal.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\obj\Debug\TotalControlDal.pdb
