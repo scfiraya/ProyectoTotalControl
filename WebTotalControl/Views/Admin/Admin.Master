@@ -40,7 +40,12 @@
                             </li>
                             <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestión de Registros<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="GenerarReportes.aspx"></a></li>
+                                    <li><a href="../Registro/Default.aspx">Registrar Ingreso/Salida Usuario</a></li>
+                                </ul>   
+                            </li>
+                            <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestión de Reportes<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="GenerarReportes.aspx">Informes</a></li>
                                 </ul>
                             </li>
                         </ul>
