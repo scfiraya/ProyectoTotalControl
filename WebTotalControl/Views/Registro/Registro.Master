@@ -29,13 +29,6 @@
                         <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestión de Registros<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="Default.aspx">Registrar Ingreso/Salida Usuario</a></li>
-                                <li><a href="DetalleIngreso.aspx">Ingreso Usuario</a></li>
-                                <li><a href="DetalleSalida.aspx">Salida Usuario</a></li>
-                                <li><a href="DetalleDispositivo.aspx">Registro Dispositivo</li>
-                                <li><a href="DetalleVisitante.aspx">Registro Visitante</a></li>
-                                <li><a href="DetalleVisitanteIngreso.aspx">Ingreso Visitante</a></li>
-                                <li><a href="DetalleVisitanteSalida.aspx">Salida Visitante</a></li>
-                                <li><a href="Informes.aspx">Informes</a></li>
                             </ul>
                         </li>
                     </ul>

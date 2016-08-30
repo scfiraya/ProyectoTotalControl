@@ -3,89 +3,84 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row">
+<div class="row">
         <h1 class="col-xs-12">Salida Usuario</h1>
     </div>
 
     <div class="row">
+
         <div class="col-xs-3 text-center">
             <img src="../Image/profile-default.png" alt="Foto usuario" class="img-responsive img-profile" />
         </div>
+
         <div class="col-xs-6 profile-info">
-            <p>Nombre completo: Sindy Carolina Firaya</p>
-            <p>Número de identificación: 1032564896</p>
-            <p>Cargo: Aprendiz</p>
-            <p>Ficha: 901541G1</p>
-        </div>
-        <div class="table-responsive devices-list">
-            <table class="table table-bordered">
-                <tr>
-                    <th>Hora de Ingreso</th>
-                </tr>
-                <tr>
-                    <th>2016-06-24 18:03:45</th>
-                </tr>
-            </table>
+
+            <div>
+                <asp:Label ID="lblNombre1" runat="server" Text="Nombre Completo: "></asp:Label>
+                <asp:Label ID="lblNombre" runat="server" Text=""></asp:Label>
+            </div>
+
+            <div>
+                <asp:Label ID="lblNumDoc1" runat="server" Text="Número de identificación:"></asp:Label>
+                <asp:Label ID="lblNumDoc" runat="server" Text=""></asp:Label>
+            </div>
+
+            <div>
+                <asp:Label ID="lblCargo1" runat="server" Text="Cargo: "></asp:Label>
+                <asp:Label ID="lblCargo" runat="server" Text=""></asp:Label>
+            </div>
+
+            <div>
+                <asp:Label ID="lblFicha1" runat="server" Text="Número de Ficha: "></asp:Label>
+                <asp:Label ID="lblFicha" runat="server" Text=""></asp:Label>
+            </div>
+
+            <div>
+                <asp:Label ID="lblFechaIngreso1" runat="server" Text="Fecha de Ingreso: "></asp:Label>
+                <asp:Label ID="lblFechaIngreso" runat="server" Text=""></asp:Label>
+            </div>
+
+            <div>
+                <asp:Label ID="lblSeccionVisitada1" runat="server" Text="Seccion Visitada: "></asp:Label>
+                <asp:Label ID="lblSeccionVisitada" runat="server" Text=""></asp:Label>
+            </div>
         </div>
     </div>
 
     <div class="row">
+
         <div class="col-xs-9">
-            <strong>Equipos Ingresados</strong>
+            <strong>Dispositivos Ingresados</strong>
         </div>
-        <div class="col-xs-3 text-right">
 
-            <input type="text" name="search-device" placeholder="Ingresar serial equipo" class="form-control" />
+        <div class="form-group">
+
+            <asp:GridView ID="gvDispositivos" runat="server" AutoGenerateColumns="false" HeaderStyle-BackColor="WhiteSmoke" RowStyle-HorizontalAlign="Justify" DataKeyNames="Nombre,Serial,Marca,Descripcion">
+                <Columns>
+                    <asp:BoundField HeaderText="Tipo del Dispositivo" DataField="Nombre" />
+                    <asp:BoundField HeaderText="Serial del Dispositivo" DataField="Serial" />
+                    <asp:BoundField HeaderText="Marca del Dispositivo" DataField="Marca" />
+                    <asp:BoundField HeaderText="Descripción del Dispositivo" DataField="Descripcion" />
+
+                    <asp:TemplateField HeaderText="Cargador">
+                        <ItemTemplate>
+                            <asp:CheckBox ID="cbCargador" runat="server" />
+                        </ItemTemplate>
+
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="Salida">
+                        <ItemTemplate>
+                            <asp:CheckBox ID="cbSalida" runat="server" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
+            </asp:GridView>
+
         </div>
-    </div>
 
-    <div class="table-responsive devices-list">
-        <table class="table table-bordered">
-            <tr>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Serial</th>
-                <th class="text-center">Cargador</th>
-                <th class="text-center"></th>
-            </tr>
-
-            <tr>
-                <td>Marca 1</td>
-                <td>Modelo 1</td>
-                <td>00000000001</td>
-                <td class="text-center">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-ok-circle"></span>
-                    </a>
-                </td>
-                <td class="text-center">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-ok-circle"></span>
-                    </a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Marca 2</td>
-                <td>Modelo 2</td>
-                <td>00000000002</td>
-                <td class="text-center">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-ok-circle"></span>
-                    </a>
-                </td>
-                <td class="text-center">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-ok-circle"></span>
-                    </a>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="text-center submit-main">
-        <button class="btn btn-success">
-            <span class="glyphicon glyphicon-ok"></span>
-            <span>Guardar Salida</span>
-        </button>
+        <div class="text-center submit-main">
+            <asp:Button ID="btnSalir" runat="server" Text="Registrar Salida" CssClass="btn btn-success" />
+        </div>
     </div>
 </asp:Content>

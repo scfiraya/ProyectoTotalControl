@@ -12,3 +12,8 @@ C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Ent
 C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.dll
 C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\bin\Debug\Entidades.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\bin\Debug\Entidades.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.pdb

@@ -50,13 +50,15 @@ namespace WebTotalControl.Views
                     if (Rol=="Registrador" )
                     {
                         Response.Redirect("Registro/Default.aspx", false);
+
+                        Session["SesionActiva1"] = 1;
                     }
                 }
             }
             catch (Exception ex)
                 {
                   
-                    lblError.Text = ex.Message.ToString();
+                    lblError.Text = "Usuario No tiene Permisos" + ex.Message.ToString();
                     
                 }
 
