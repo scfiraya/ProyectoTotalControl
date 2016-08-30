@@ -125,7 +125,11 @@ namespace WebTotalControl.Views
                 }
 
                 objCrearFichaLib.CreacionFichaLib(NumFicha, Ambiente, IdPrograma);
-                lblSuccess.Text = "El registro se actualizo exitosamente.";
+                lblSuccess.Text = "La Ficha se creo exitosamente.";
+
+                txtAmbiente.Text = "";
+                txtCodFicha.Text = "";
+
           
             }
             catch (Exception ex)

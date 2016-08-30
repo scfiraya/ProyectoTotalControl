@@ -34,6 +34,10 @@
           <div class="text-center">
             <asp:Button ID="btncrearFicha" runat="server" Text="CrearFicha"  class="btn btn-primary" ValidationGroup="grupoval1" CausesValidation="true" OnClick="btncrearFicha_Click"/>
         </div>
+
+          <div class="col-xs-6">
+                <asp:Label ID="lblSuccess" runat="server" Text="" class="col-xs-6"></asp:Label>
+            </div>
         <hr /><hr /> <h1>Carga Aprendiz</h1>
 
         <div class="form-group">
@@ -42,9 +46,7 @@
             <asp:Button ID="btnSubir" runat="server" Text="Guardar" aceptan="image/gif,image/jpg" class="btn btn-primary" ValidationGroup="grupoval1" CausesValidation="true" OnClick="btnSubir_Click" />
         </div>
 
-            <div class="col-xs-6">
-                <asp:Label ID="lblSuccess" runat="server" Text="" class="col-xs-6"></asp:Label>
-            </div>
+          
         </div>
 
          
