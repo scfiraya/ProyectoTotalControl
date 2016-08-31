@@ -12,7 +12,7 @@ namespace WebTotalControl.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            txtUsuario.Focus();
         }
 
         protected void btnIngresar_Click(object sender, EventArgs e)
@@ -20,16 +20,13 @@ namespace WebTotalControl.Views
 
             try
             {
-
-
+                
                 TotalControlLib.Admin.Usuario objconsulta = new TotalControlLib.Admin.Usuario();
                 DataTable dtUsuario = new DataTable();
                 string NombreUsuario = "";
                 string Contrasena = "";
                 string Rol;
-               
-
-            
+                           
                 NombreUsuario = txtUsuario.Text;
                 Contrasena = txtContraseña.Text;
                 dtUsuario = objconsulta.TraerIngresoUsuarioBll(NombreUsuario,Contrasena);
@@ -51,18 +48,28 @@ namespace WebTotalControl.Views
                     {
                         Response.Redirect("Registro/Default.aspx", false);
 
+
                         Session["SesionActiva1"] = 1;
+
                     }
                 }
             }
             catch (Exception ex)
                 {
                   
-                    lblError.Text = "Usuario No tiene Permisos" + ex.Message.ToString();
+
+
+                    lblError.Text = "Usuario No tiene permisos datos incorrectos" + ex.Message.ToString();
+
                     
                 }
 
           
+        }
+
+        protected void lbtOlvido_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Recuperacion/CambioClave.aspx");
         }
     }
 

@@ -83,21 +83,28 @@ namespace TotalControlDal
             Connection.Close();
         }
 
-        //public void InsertarUsuarioDal(string NomCom, string Apellido, int NumDoc, string Login, string Contra, bool Activo, string TipoDoc, string Rol, string Cargo)
-        //{
-        //    string sql = "";
+        public void InsertarUsuarioDal(string NumDoc, string NomCom, string Apellido, int TipoDoc, int Cargo, int Rol, string Login, string Contra, int NFicha)
+        {
+                                    
+            SqlConnection Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString);
+            Connection.Open();
+            IDbCommand Comando = Connection.CreateCommand();
+            Comando.CommandType = CommandType.StoredProcedure;
+            Comando.CommandText = "SPCrearusuario";
 
-        //    sql = "insert into Usuario values (" + NumDoc + NomCom + Apellido + TipoDoc + "'Aprendiz'" + Rol + ")" + "insert into Login Values ((select IdUsuaio from Usuario where NumeroIdentificacion=" + NumDoc + ")" + Login + Cargo + Activo + ")";
-
-        //    SqlConnection Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString);
-        //    Connection.Open();
-
-        //    IDbCommand Comando = Connection.CreateCommand();
-        //    Comando.CommandType = CommandType.Text;
-        //    Comando.CommandText = sql;
-        //    Comando.ExecuteNonQuery();
-        //    Connection.Close();
-        //}
+            Comando.Parameters.Add(new SqlParameter("@NumIdentificacion", NumDoc));
+            Comando.Parameters.Add(new SqlParameter("@Nombre", NomCom));
+            Comando.Parameters.Add(new SqlParameter("@Apellido", Apellido));
+            Comando.Parameters.Add(new SqlParameter("@TipoDoc", TipoDoc));
+            Comando.Parameters.Add(new SqlParameter("@Cargo", Cargo));
+            Comando.Parameters.Add(new SqlParameter("@Rol", Rol));            
+            Comando.Parameters.Add(new SqlParameter("@Login", Login));
+            Comando.Parameters.Add(new SqlParameter("@Password", Contra));
+            Comando.Parameters.Add(new SqlParameter("@Ficha", NFicha));
+            
+            Comando.ExecuteNonQuery();
+            Connection.Close();
+        }
 
         public DataTable TipoDocDal()
         {
@@ -137,6 +144,8 @@ namespace TotalControlDal
             return dtCargo;
         }
 
+
+
         public DataTable NombreRol()
         {
             string sql = "";
@@ -154,6 +163,83 @@ namespace TotalControlDal
             Connection.Close();
             dtRol = dsRol.Tables[0];
             return dtRol;
+        }
+
+        public DataTable FichaPrograma()
+        {
+            string sql = "";
+            sql = "select  concat (NumeroFicha,' - ',NombrePrograma) as FichaPrograma, IdFicha from Ficha inner join Programa on (Ficha.IdPrograma=Programa.IdPrograma)";
+
+            DataTable dtFichaPrograma = new DataTable();
+            DataSet dsFichaPrograma = new DataSet();
+            SqlConnection Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString);
+            Connection.Open();
+            IDbCommand Comando = Connection.CreateCommand();
+            Comando.CommandType = CommandType.Text;
+            Comando.CommandText = sql;
+            SqlDataAdapter Adaptador = new SqlDataAdapter((SqlCommand)Comando);
+            Adaptador.Fill(dsFichaPrograma);
+            Connection.Close();
+            dtFichaPrograma = dsFichaPrograma.Tables[0];
+            return dtFichaPrograma;
+        }
+                
+        public string ValidaCedulaDal(string cedula)
+        {
+
+            string sql = "";
+            sql = "select NumeroIdentificacion from Usuario where NumeroIdentificacion='"+cedula+"'";
+
+            SqlConnection Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString);
+            Connection.Open();
+
+            IDbCommand Comando = Connection.CreateCommand();
+            Comando.CommandType = CommandType.Text;
+            Comando.CommandText = sql;
+            string Valido = Convert.ToString(Comando.ExecuteScalar());
+            Connection.Close();
+
+            return Valido;
+
+        }
+
+        public void CambioPasswordDal(string cedula, string password)
+        {
+
+            string sql = "";
+            sql = "update Login set Contrasena='"+password+"' where IdUsuario=(select IdUsuaio from Usuario where NumeroIdentificacion='"+cedula+"')";
+
+            SqlConnection Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString);
+            Connection.Open();
+
+            IDbCommand Comando = Connection.CreateCommand();
+            Comando.CommandType = CommandType.Text;
+            Comando.CommandText = sql;
+            Comando.ExecuteNonQuery();
+            Connection.Close();
+
+        }
+
+        public DataTable ModificaDatos (string cedula)
+        {
+
+            string sql = "";
+            sql = "select IdPrograma, NombrePrograma from Programa";
+
+            DataTable dtPrograma = new DataTable();
+            DataSet dsPrograma = new DataSet();
+            SqlConnection Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString);
+            Connection.Open();
+            IDbCommand Comando = Connection.CreateCommand();
+            Comando.CommandType = CommandType.Text;
+            Comando.CommandText = sql;
+            SqlDataAdapter Adaptador = new SqlDataAdapter((SqlCommand)Comando);
+            Adaptador.Fill(dsPrograma);
+            Connection.Close();
+            dtPrograma = dsPrograma.Tables[0];
+            return dtPrograma;
+
+
         }
 
 

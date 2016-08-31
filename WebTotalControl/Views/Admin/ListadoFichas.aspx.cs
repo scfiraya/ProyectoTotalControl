@@ -24,9 +24,7 @@ namespace WebTotalControl.Views
 
                 dtLisFichas = objconsulta.TraerFichasBll(consulta);
                 gvListas.DataSource = dtLisFichas;
-                gvListas.DataBind();
-                
-
+                gvListas.DataBind();                
 
             }
             catch (Exception ex)

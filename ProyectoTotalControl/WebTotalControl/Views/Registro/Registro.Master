@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Registro.master.cs" Inherits="WebTotalControl.Views.Registro.Registro" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>TotalControl - Registro</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/Style.css" rel="stylesheet" />
+    <link href="../../Content/Registro.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <header>
+        <div class="container">
+            <div class="row">
+                <img src="../Image/total-control.png" id="logo" />
+            </div>
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="glyphicon glyphicon-off" href="../Default.aspx"></a>
+                        </li>
+                        <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestión de Registros<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Default.aspx">Registrar Ingreso/Salida Usuario</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="main container">
+        <div class="row">
+            <article class="col-xs-12">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </article>
+        </div>
+    </section>
+
+    <footer class="container-fluid">
+        <div class="row text-center">
+            <h5>&copy; ADSI. 2016</h5>
+        </div>
+    </footer>
+
+    <script src="../../Scripts/jquery-2.2.1.min.js"></script>
+    <script src="../../Scripts/bootstrap.min.js"></script>
+        </form>
+</body>
+</html>

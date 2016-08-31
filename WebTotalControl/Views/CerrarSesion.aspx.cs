@@ -14,8 +14,7 @@ namespace WebTotalControl.Views
 
              Session["SesionInactiva"] = -1;
              Session.Abandon();
-             Response.Redirect("Default.aspx");
-           
+             Response.Redirect("Default.aspx");         
            
         }
     }

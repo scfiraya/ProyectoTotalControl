@@ -1,0 +1,2 @@
+2,34567,daniel,ruiz,1,Aprendiz,1;
+3,84699,felipe,gaitan,1,Aprendiz,1;

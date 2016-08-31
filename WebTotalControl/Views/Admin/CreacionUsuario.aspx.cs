@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -21,6 +21,8 @@ namespace WebTotalControl.Views.Admin
 
                 if (!IsPostBack)
                 {
+                    //Carga de DropDownList's del panel de aprendiz
+
                     TotalControlLib.Admin.Usuario objMostrarTipoDoc = new TotalControlLib.Admin.Usuario();
 
                     DataTable dtTipoDoc = new DataTable();
@@ -29,17 +31,11 @@ namespace WebTotalControl.Views.Admin
                     ddlTipoDoc.DataTextField = "Tipo";
                     ddlTipoDoc.DataValueField = "IdTipoDocumento";
                     ddlTipoDoc.DataBind();
-
-                    TotalControlLib.Admin.Usuario objMostrarCargo = new TotalControlLib.Admin.Usuario();
-
-                    DataTable dtCargo = new DataTable();
-                    dtTipoDoc = objMostrarCargo.Cargo();
-                    ddlCargo.DataSource = dtTipoDoc;
-                    ddlCargo.DataTextField = "Cargo";
-                    ddlCargo.DataValueField = "IdTipoCargo";
-                    ddlCargo.DataBind();
-
-
+                    
+                    //ListItem lst = new ListItem("Seleccionar...", "0");
+                    //ddlPrograma.Items.Add(lst);
+                    //ddlPrograma.Items.Insert(ddlPrograma.Items.Count - (ddlPrograma.Items.Count), lst); 
+  
                     TotalControlLib.Admin.Usuario objMostrarRol = new TotalControlLib.Admin.Usuario();
 
                     DataTable dtRol = new DataTable();
@@ -49,120 +45,178 @@ namespace WebTotalControl.Views.Admin
                     ddlRol.DataValueField = "IdRol";
                     ddlRol.DataBind();
 
+                    TotalControlLib.Admin.Usuario objFichaPrograma = new TotalControlLib.Admin.Usuario();
+
+                    DataTable dtFichaPrograma = new DataTable();
+                    dtFichaPrograma = objFichaPrograma.FichaProgramaBLL();
+                    ddlFichaPrograma.DataSource = dtFichaPrograma;
+                    ddlFichaPrograma.DataTextField = "FichaPrograma";
+                    ddlFichaPrograma.DataValueField = "IdFicha";
+                    ddlFichaPrograma.DataBind();
+
                 }
 
             }
             catch (Exception ex)
             {
-                Response.Redirect("~/views/Default.aspx");
+                Response.Redirect("~/Views/Default.aspx");
             }
-        }        
+        }
+
+        protected void ddlCargo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            int cargo = Convert.ToInt32(ddlCargo.SelectedValue);
+
+            switch (cargo)
+            {
+
+                case 0:
+                    {
+                        pnlDatos.Visible = false;
+                        break;
+                    }
+
+                case 200:
+                    {
+                        LimpiarCampos(this);
+                        pnlDatos.Visible = true;
+
+                        lblFichaPrograma.Visible = true;
+                        ddlFichaPrograma.Visible = true;
+
+                        lblFichaPrograma.Visible = true;
+                        ddlFichaPrograma.Visible = true;
+
+                        lblLogin.Visible = false;
+                        txtLogin.Visible = false;
+
+                        lblContrasena.Visible = false;
+                        txtContrasena.Visible = false;
+
+                        lblRcontrasena.Visible = false;
+                        txtRcontrasena.Visible = false;
+
+                        break;
+                    }
+
+                case 201:
+                    {
+                        LimpiarCampos(this);
+                        pnlDatos.Visible = true;
+
+                        lblFichaPrograma.Visible = true;
+                        ddlFichaPrograma.Visible = true;
+
+                        lblLogin.Visible = true;
+                        txtLogin.Visible = true;
+
+                        lblContrasena.Visible = true;
+                        txtContrasena.Visible = true;
+
+                        lblRcontrasena.Visible = true;
+                        txtRcontrasena.Visible = true;
+
+                        break;
+                    }
+
+                case 202:
+                    {
+                        LimpiarCampos(this);
+                        pnlDatos.Visible = true;
+
+                        lblFichaPrograma.Visible = false;
+                        ddlFichaPrograma.Visible = false;
+
+                        lblLogin.Visible = true;
+                        txtLogin.Visible = true;
+
+                        lblContrasena.Visible = true;
+                        txtContrasena.Visible = true;
+
+                        lblRcontrasena.Visible = true;
+                        txtRcontrasena.Visible = true;
+
+
+                        break;
+                    }
+            }
+        }
 
         protected void btnInsertar_Click(object sender, EventArgs e)
         {
             try
             {
-                //TotalControlLib.Admin.Usuario objInsertarLib = new TotalControlLib.Admin.Usuario();
+                TotalControlLib.Admin.Usuario objInsertarLib = new TotalControlLib.Admin.Usuario();
 
-                //string NomCom = txtNombre.Text;
-                //string Apellido = txtApellido.Text;
-                //int NumDoc = Convert.ToInt32(txtNumDoc.Text);
-                //string Login = txtLogin.Text;
-                //string Contrasena = txtContrasena.Text;
-                //string Rcontrasena = txtRcontrasena.Text;
+                string NumDoc = txtNumDoc.Text;
+                string NomCom = txtNombre.Text;
+                string Apellido = txtApellido.Text;
+                int TipoDoc = Convert.ToInt32(ddlTipoDoc.SelectedValue);
+                int Cargo = Convert.ToInt32(ddlCargo.SelectedValue);                
+                int Rol = Convert.ToInt32(ddlRol.SelectedValue);
+                int FichaPrograma = Convert.ToInt32(ddlFichaPrograma.SelectedValue);     
+                string Login = txtLogin.Text;
+                string Contrasena = txtContrasena.Text;
+                string Rcontrasena = txtRcontrasena.Text;                                          
 
-                //string TipoDoc = "";
+                if (Contrasena == Rcontrasena)
+                {
+                    string Contra = txtContrasena.Text;
 
-                //if (ddlTipoDoc.Text.Equals(""))
-                //{
-                //    TipoDoc = "";
-                //}
-                //else
-                //{
-                //    TipoDoc = (ddlTipoDoc.Text);
-                //}
+                    objInsertarLib.InsertarUsuarioLib(NumDoc, NomCom, Apellido, TipoDoc, Cargo, Rol, Login, Contra, FichaPrograma);
 
-                //string Rol = "";
+                    lblValidacion.CssClass = "label label-success";
 
-                //if (ddlRol.Text.Equals(""))
-                //{
-                //    Rol = "";
-                //}
-                //else
-                //{
-                //    Rol = (ddlRol.Text);
-                //}
+                    lblValidacion.Text = "El registro se guardó exitosamente.";
 
-                //bool Activo = cbEstado.Visible;
+                    //Limpiar TextBox y CheckBox del formulario.
+                    LimpiarCampos(this);
+                }
+                else
+                {
+                    lblValidacion.CssClass = "label label-danger";
 
-                //if (cbEstado.Checked == true)
-                //{
-                //    Activo = true;
-                //}
-                //else
-                //{
-                //    Activo = false;
-                //}
-
-                //string c1, c2;
-                //c1 = txtContrasena.Text;
-                //c2 = txtRcontrasena.Text;
-
-                //if (c1 == c2)
-                //{
-                //    string Contra = txtContrasena.Text;
-
-                //    objInsertarLib.InsertarUsuarioLib(NomCom, Apellido, NumDoc, Login, Contra, Activo, TipoDoc, Rol);
-
-                //    lblValidacion.Text = "El registro se ingreso exitosamente.";
-                //}
-                //else
-                //{
-                //    lblValidacion.Text = "Las contraseñas no coinciden.";
-                //}
-
+                    lblValidacion.Text = "Las contraseñas ingresadas no coinciden.";
+                } 
 
             }
             catch (Exception ex)
             {
+                lblValidacion.CssClass = "label label-danger form-group label-control";
+
                 lblValidacion.Text = "Error al ingresar el registro. Detalle del error: " + ex.Message.ToString();
             }
         }
 
-        protected void btnModificar_Click(object sender, EventArgs e)
+
+        private void LimpiarCampos(Control CreacionUsuario)
         {
-            try
+            foreach (Control oControls in CreacionUsuario.Controls)
             {
-                TotalControlLib.Admin.Usuario objModificarLib = new TotalControlLib.Admin.Usuario();
+                if (oControls is TextBox)
+                {
+                    ((TextBox)oControls).Text = "";
+                }
 
-                string NomCom = txtNombre.Text;
-                int NumDoc = Convert.ToInt32(txtNumDoc.Text);
+                if (oControls is CheckBox)
+                {
+                    ((CheckBox)oControls).Checked = false;
+                }
+                
+                if (oControls.Controls.Count > 0)
+                {
+                    LimpiarCampos(oControls);
+                }
 
-                objModificarLib.ModificarUsuarioLib(NomCom, NumDoc);
-                lblValidacion.Text = "El registro se actualizo exitosamente.";
-            }
-            catch(Exception ex) 
-            {
-                lblValidacion.Text = "Error al guardar el registro. Detalle del error: " + ex.Message.ToString();
             }
 
         }
 
-        //protected void btnEliminar_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        TotalControlLib.Admin.Usuario objEliminarLib = new TotalControlLib.Admin.Usuario();
-
-        //        int NumDoc = Convert.ToInt32(txtNumDoc.Text);
-
-        //        objEliminarLib.EliminarUsuarioLib(NumDoc);
-        //        lblValidacion.Text = "El registro se elimino exitosamente.";
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        lblValidacion.Text = "Error al eliminar el registro. Detalle del error: " + ex.Message.ToString();
-        ////    }
-        //}
+        protected void lbtIniciaSesion_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Default.aspx");
+        }
+    
     }
 }

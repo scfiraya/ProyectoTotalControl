@@ -1,0 +1,38 @@
+﻿/**
+    Hoja de estilos principal del proyecto
+
+    Color base: #0083BC
+    Azul medio: #0B61D3
+    Azul aguamarina: #0BCBD3
+    Azul oscuro: #0A2BC9
+    Verde aguamarina: #0AC99B
+*/
+
+header{
+    height: 20vh;
+    color:black;
+}
+
+section.main{
+    min-height: 75vh;
+}
+
+.color1{
+    background:#34495e;
+    color:#fff;
+}
+
+article{
+    color:black;
+}
+
+#logo{
+    width:auto;
+    height: 11.5vh;
+}
+
+footer{
+    height: 5vh;
+    background:#65a6dd;
+    color:black;
+}

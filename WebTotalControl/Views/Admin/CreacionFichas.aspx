@@ -14,7 +14,7 @@
             <div class="col-xs-6">
                 <asp:DropDownList ID="ddlPrograma" runat="server" DataTextField="NombrePrograma" DataValueField="IdPrograma"></asp:DropDownList>
             </div>
-        </div>
+        </div> 
 
         <div class="form-group">
             <asp:Label ID="lblCodFicha" runat="server" Text="Número de Ficha" class="col-xs-6"></asp:Label>
