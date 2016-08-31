@@ -15,7 +15,7 @@
                 <asp:DropDownList ID="ddlFicha" runat="server" OnSelectedIndexChanged="ddlFicha_SelectedIndexChanged" DataSourceID="SqlDataSource1" DataTextField="Nombre" DataValueField="Nombre"></asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Conexion %>" SelectCommand="SELECT [Nombre] FROM [Ficha]"></asp:SqlDataSource>
             </div>
-        </div>
+        </div> 
 
         <div class="form-group">
             <asp:Label ID="lblCodFicha" runat="server" Text="Número de Ficha" class="col-xs-6"></asp:Label>

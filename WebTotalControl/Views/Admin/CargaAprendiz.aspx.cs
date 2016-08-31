@@ -15,6 +15,8 @@ namespace WebTotalControl.Views
             try
             {
                 int SesionActiva = (int)Session["SesionActiva"];
+              
+
             }
             catch (Exception ex)
             {
