@@ -7,13 +7,13 @@ C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalContro
 C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\Entidades\bin\Debug\Entidades.pdb
 C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\Entidades\obj\Debug\Entidades.dll
 C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\Entidades\obj\Debug\Entidades.pdb
-C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\bin\Debug\Entidades.dll
-C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\bin\Debug\Entidades.pdb
-C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
-C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.dll
-C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\bin\Debug\Entidades.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\bin\Debug\Entidades.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\bin\Debug\Entidades.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\bin\Debug\Entidades.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Debug\Entidades.pdb

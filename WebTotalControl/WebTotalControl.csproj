@@ -80,6 +80,9 @@
     <Content Include="Views\Admin\ListadoUsuarios.aspx" />
     <Content Include="Views\Image\editarficha.gif" />
     <Content Include="Views\Image\IconoRegresar.png" />
+    <Content Include="Views\Image\image2.png" />
+    <Content Include="Views\Image\Imagen1.png" />
+    <Content Include="Views\Image\imagen3.png" />
     <Content Include="Views\Image\profile-default.png" />
     <Content Include="Views\Image\total-control.png" />
     <Content Include="Views\Default.aspx" />

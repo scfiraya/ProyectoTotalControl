@@ -30,15 +30,6 @@ C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalContro
 C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\TotalControlLib\obj\Debug\TotalControlLib.csprojResolveAssemblyReference.cache
 C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\TotalControlLib\obj\Debug\TotalControlLib.dll
 C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\TotalControlLib\obj\Debug\TotalControlLib.pdb
-C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\TotalControlLib.dll
-C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\TotalControlLib.pdb
-C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\Entidades.dll
-C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\TotalControlDal.dll
-C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\Entidades.pdb
-C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\TotalControlDal.pdb
-C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\obj\Debug\TotalControlLib.csprojResolveAssemblyReference.cache
-C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\obj\Debug\TotalControlLib.dll
-C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\obj\Debug\TotalControlLib.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\TotalControlLib.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\TotalControlLib.pdb
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\Entidades.dll
@@ -48,3 +39,12 @@ C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Tota
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\obj\Debug\TotalControlLib.csprojResolveAssemblyReference.cache
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\obj\Debug\TotalControlLib.dll
 C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\obj\Debug\TotalControlLib.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\TotalControlLib.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\TotalControlLib.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\Entidades.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\TotalControlDal.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\Entidades.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\bin\Debug\TotalControlDal.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\obj\Debug\TotalControlLib.csprojResolveAssemblyReference.cache
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\obj\Debug\TotalControlLib.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlLib\obj\Debug\TotalControlLib.pdb
