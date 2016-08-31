@@ -1,0 +1,5 @@
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\bin\Release\Entidades.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\bin\Release\Entidades.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Release\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Release\Entidades.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\Entidades\obj\Release\Entidades.pdb

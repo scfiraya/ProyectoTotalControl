@@ -1,0 +1,11 @@
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\WebTotalControl\bin\WebTotalControl.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\WebTotalControl\bin\WebTotalControl.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\WebTotalControl\bin\Entidades.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\WebTotalControl\bin\TotalControlLib.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\WebTotalControl\bin\TotalControlDal.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\WebTotalControl\bin\Entidades.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\WebTotalControl\bin\TotalControlLib.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\WebTotalControl\bin\TotalControlDal.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\WebTotalControl\obj\Release\WebTotalControl.csprojResolveAssemblyReference.cache
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\WebTotalControl\obj\Release\WebTotalControl.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\WebTotalControl\obj\Release\WebTotalControl.pdb

@@ -1,0 +1,2 @@
+1,10325441363,Efrain Eduardo,Gamboa Firaya,1,200, ,1,102;
+2,10524647885,Luis Alfonso,Nova Firaya,1,200, ,1,102;

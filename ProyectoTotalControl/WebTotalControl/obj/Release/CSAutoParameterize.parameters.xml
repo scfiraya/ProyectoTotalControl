@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Conexion-Web.config Connection String" description="Conexion Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="server=127.0.0.1;database=TotalControl;Integrated Security=False" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\carolina\\Documents\\Visual\ Studio\ 2012\\Projects\\ProyectoTotalControl\\WebTotalControl\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Conexion']/@connectionString" />
+  </parameter>
+</parameters>
