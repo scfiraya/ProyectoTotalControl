@@ -14,6 +14,20 @@ C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\Total
 C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\TotalControlDal\obj\Debug\TotalControlDal.csprojResolveAssemblyReference.cache
 C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\TotalControlDal\obj\Debug\TotalControlDal.dll
 C:\Users\EFRAIN\Documents\Visual Studio 2013\Projects\ProyectoTotalControl\TotalControlDal\obj\Debug\TotalControlDal.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Debug\TotalControlDal.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Debug\TotalControlDal.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Debug\Entidades.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Debug\Entidades.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\obj\Debug\TotalControlDal.csprojResolveAssemblyReference.cache
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\obj\Debug\TotalControlDal.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\obj\Debug\TotalControlDal.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Debug\TotalControlDal.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Debug\TotalControlDal.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Debug\Entidades.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Debug\Entidades.pdb
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\obj\Debug\TotalControlDal.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\obj\Debug\TotalControlDal.dll
+C:\Users\USUARIO\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\obj\Debug\TotalControlDal.pdb
 C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\TotalControlDal\bin\Debug\TotalControlDal.dll
 C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\TotalControlDal\bin\Debug\TotalControlDal.pdb
 C:\Users\David Montoya\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\ProyectoTotalControl\TotalControlDal\bin\Debug\Entidades.dll

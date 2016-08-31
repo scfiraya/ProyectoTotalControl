@@ -31,6 +31,8 @@ namespace WebTotalControl.Views
                 Contrasena = txtContraseña.Text;
                 dtUsuario = objconsulta.TraerIngresoUsuarioBll(NombreUsuario,Contrasena);
 
+                
+
                 Rol=dtUsuario.Rows[0][0].ToString();
 
                 if (Rol=="Administrador")
@@ -39,21 +41,30 @@ namespace WebTotalControl.Views
                     Response.Redirect("Admin/Default.aspx", false);
 
                     Session["SesionActiva"] = 1;
-                }
+
+                  }
                 else {
                     if (Rol=="Registrador" )
                     {
                         Response.Redirect("Registro/Default.aspx", false);
-                        Session["SesionRegis"] = 1;
+
+
+                        Session["SesionActiva1"] = 1;
+
                     }
                 }
             }
-            catch (Exception )
+            catch (Exception ex)
                 {
                   
-                    lblError.Text = "Datos incorrectos";
+
+
+                    lblError.Text = "Usuario No tiene permisos datos incorrectos" + ex.Message.ToString();
+
                     
                 }
+
+          
         }
 
         protected void lbtOlvido_Click(object sender, EventArgs e)
@@ -61,4 +72,6 @@ namespace WebTotalControl.Views
             Response.Redirect("../Recuperacion/CambioClave.aspx");
         }
     }
+
+
 }

@@ -1,0 +1,7 @@
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Release\TotalControlDal.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Release\TotalControlDal.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Release\Entidades.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\bin\Release\Entidades.pdb
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\obj\Release\TotalControlDal.csprojResolveAssemblyReference.cache
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\obj\Release\TotalControlDal.dll
+C:\Users\carolina\Documents\Visual Studio 2012\Projects\ProyectoTotalControl\TotalControlDal\obj\Release\TotalControlDal.pdb

@@ -31,22 +31,13 @@ namespace WebTotalControl.Views {
         protected global::System.Web.UI.WebControls.Label lblProFor;
         
         /// <summary>
-        /// Control ddlFicha.
+        /// Control ddlPrograma.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlFicha;
-        
-        /// <summary>
-        /// Control SqlDataSource1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlPrograma;
         
         /// <summary>
         /// Control lblCodFicha.
@@ -76,33 +67,6 @@ namespace WebTotalControl.Views {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revCodFicha;
         
         /// <summary>
-        /// Control lblInstructor.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblInstructor;
-        
-        /// <summary>
-        /// Control txtInstructor.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtInstructor;
-        
-        /// <summary>
-        /// Control revInstructor.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator revInstructor;
-        
-        /// <summary>
         /// Control lblAmbiente.
         /// </summary>
         /// <remarks>
@@ -130,6 +94,15 @@ namespace WebTotalControl.Views {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revAmbiente;
         
         /// <summary>
+        /// Control btncrearFicha.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btncrearFicha;
+        
+        /// <summary>
         /// Control fuSubirArchivo.
         /// </summary>
         /// <remarks>
@@ -155,14 +128,5 @@ namespace WebTotalControl.Views {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSuccess;
-        
-        /// <summary>
-        /// Control btnGuardar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGuardar;
     }
 }

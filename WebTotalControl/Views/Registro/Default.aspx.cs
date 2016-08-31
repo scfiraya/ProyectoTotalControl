@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
+using TotalControlLib;
 
 namespace WebTotalControl.Views.Registro
 {
@@ -12,37 +13,47 @@ namespace WebTotalControl.Views.Registro
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                int SesionActiva = (int)Session["SesionActiva1"];
+            }
+            catch (Exception)
+            {
+                Response.Redirect("~/Views/Default.aspx");
+            }
         }
 
-        protected void btbIngeso_Click(object sender, EventArgs e)
+        protected void btnCrearVisitante_Click(object sender, EventArgs e)
         {
 
-         try
+            Response.Redirect("DetalleVisitante.aspx", false);
+        }
+
+
+        protected void btnIngreso_Click(object sender, EventArgs e)
+        {
+            try
             {
+                TotalControlLib.Registro.Ingreso objIngreso = new TotalControlLib.Registro.Ingreso();
 
-                TotalControlLib.Admin.Usuario objconsulta = new TotalControlLib.Admin.Usuario();
-                DataTable dtUsuario = new DataTable();
-                string Documento = "";
-                
-                string Consulta;
-                Documento=txtDocumento.Text;
+                DataTable dtIngreso = new DataTable();
 
-            
-                dtUsuario = objconsulta.TraerUsuarioBll(Documento);
+                string NumDoc = "";
 
-                Consulta=dtUsuario.Rows[0][0].ToString();
+                DataTable dtConsulta = (DataTable)Session["consultaa"];
+
+                NumDoc = txtDocumento.Text;
+
+                dtIngreso = objIngreso.TraerIngresoLib(NumDoc);
+
+                Session["consultaa"] = dtIngreso;
+
                 Response.Redirect("DetalleIngreso.aspx", false);
-                
-                
             }
-            catch (Exception )
-                {
-                  
-                    lblMensaje.Text="Usuario No registrado";
-                    
-                }
-        
+            catch (Exception ex)
+            {
+                lblMensaje.Text = "El usuario no existe, por favor regístrese. Detalle del error: " + ex.Message.ToString();
+            }
         }
     }
 }

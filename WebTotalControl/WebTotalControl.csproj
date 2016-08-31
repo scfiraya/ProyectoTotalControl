@@ -73,28 +73,29 @@
     <Content Include="Scripts\jquery-2.2.1.js" />
     <Content Include="Scripts\jquery-2.2.1.min.js" />
     <Content Include="Scripts\npm.js" />
-    <Content Include="Views\Admin\CargaAprendiz.aspx" />
     <Content Include="Views\Admin\CreacionFichas.aspx" />
     <Content Include="Views\Admin\CreacionUsuario.aspx" />
     <Content Include="Views\Admin\Default.aspx" />
     <Content Include="Views\Admin\DetalleFichas.aspx" />
+    <Content Include="Views\Admin\InactivacionU.aspx" />
     <Content Include="Views\Admin\ModificaDatos.aspx" />
     <Content Include="Views\Admin\GenerarReportes.aspx" />
     <Content Include="Views\Admin\ListadoUsuarios.aspx" />
     <Content Include="Views\Image\editarficha.gif" />
+    <Content Include="Views\Image\IconoRegresar.png" />
     <Content Include="Views\Image\profile-default.png" />
     <Content Include="Views\Image\total-control.png" />
     <Content Include="Views\Default.aspx" />
     <Content Include="Views\Admin\ListadoFichas.aspx" />
+    <Content Include="Views\CerrarSesion.aspx" />
     <Content Include="Views\Page.Master" />
     <Content Include="Views\Registro\Default.aspx" />
     <Content Include="Views\Registro\DetalleDispositivo.aspx" />
     <Content Include="Views\Registro\DetalleIngreso.aspx" />
     <Content Include="Views\Registro\DetalleSalida.aspx" />
-    <Content Include="Views\Registro\DetalleVisitante.aspx" />
+    <Content Include="Views\SubirArchivo\DetalleVisitante.aspx" />
     <Content Include="Views\Registro\DetalleVisitanteIngreso.aspx" />
     <Content Include="Views\Registro\DetalleVisitanteSalida.aspx" />
-    <Content Include="Views\Registro\Informes.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -114,13 +115,6 @@
     </Compile>
     <Compile Include="Views\Admin\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Admin\CargaAprendiz.aspx.cs">
-      <DependentUpon>CargaAprendiz.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Admin\CargaAprendiz.aspx.designer.cs">
-      <DependentUpon>CargaAprendiz.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\CreacionFichas.aspx.cs">
       <DependentUpon>CreacionFichas.aspx</DependentUpon>
@@ -149,6 +143,13 @@
     </Compile>
     <Compile Include="Views\Admin\DetalleFichas.aspx.designer.cs">
       <DependentUpon>DetalleFichas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\InactivacionU.aspx.cs">
+      <DependentUpon>InactivacionU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\InactivacionU.aspx.designer.cs">
+      <DependentUpon>InactivacionU.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\ModificaDatos.aspx.cs">
       <DependentUpon>ModificaDatos.aspx</DependentUpon>
@@ -185,6 +186,13 @@
     <Compile Include="Views\Admin\ListadoFichas.aspx.designer.cs">
       <DependentUpon>ListadoFichas.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\CerrarSesion.aspx.cs">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CerrarSesion.aspx.designer.cs">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Page.Master.cs">
       <DependentUpon>Page.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -220,11 +228,11 @@
     <Compile Include="Views\Registro\DetalleSalida.aspx.designer.cs">
       <DependentUpon>DetalleSalida.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\Registro\DetalleVisitante.aspx.cs">
+    <Compile Include="Views\SubirArchivo\DetalleVisitante.aspx.cs">
       <DependentUpon>DetalleVisitante.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\Registro\DetalleVisitante.aspx.designer.cs">
+    <Compile Include="Views\SubirArchivo\DetalleVisitante.aspx.designer.cs">
       <DependentUpon>DetalleVisitante.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Registro\DetalleVisitanteIngreso.aspx.cs">
@@ -240,13 +248,6 @@
     </Compile>
     <Compile Include="Views\Registro\DetalleVisitanteSalida.aspx.designer.cs">
       <DependentUpon>DetalleVisitanteSalida.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Registro\Informes.aspx.cs">
-      <DependentUpon>Informes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Registro\Informes.aspx.designer.cs">
-      <DependentUpon>Informes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Registro\Registro.Master.cs">
       <DependentUpon>Registro.Master</DependentUpon>
@@ -285,9 +286,7 @@
       <Name>TotalControlLib</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\SubirArchivo\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

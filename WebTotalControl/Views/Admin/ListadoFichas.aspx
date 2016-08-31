@@ -8,7 +8,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <h2>Listado Fichas </h2>
    <div>
-       <asp:GridView ID="gvListas" runat="server" AutoGenerateColumns="false" HeaderStyle-BackColor="WhiteSmoke" RowStyle-HorizontalAlign="Justify" DataKeyNames="IdFicha,NumeroFicha,Nombre" >
+       <asp:GridView ID="gvListas" runat="server" AutoGenerateColumns="false" HeaderStyle-BackColor="WhiteSmoke" RowStyle-HorizontalAlign="Justify" DataKeyNames="IdFicha,NumeroFicha,Ambiente,NombrePrograma" SelectedRowStyle-BackColor="#ff3399">
            <Columns>
                <asp:TemplateField  HeaderText="Seleccionar">
                         <ItemTemplate>
@@ -18,7 +18,7 @@
               
 
                <asp:BoundField HeaderText="Número de Ficha" DataField="NumeroFicha" HeaderStyle-HorizontalAlign="Justify" />
-                <asp:BoundField HeaderText="Ficha" DataField="Nombre" HeaderStyle-HorizontalAlign="Justify" />
+                <asp:BoundField HeaderText="Programa" DataField="NombrePrograma" HeaderStyle-HorizontalAlign="Justify" />
                <asp:HyperLinkField DataNavigateUrlFields="IdFicha" DataNavigateUrlFormatString="DetalleFichas.aspx" HeaderText="Detalle" Text="Ver" DataTextFormatString="{0:c}" />
            </Columns>
        </asp:GridView>

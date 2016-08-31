@@ -41,12 +41,22 @@ namespace TotalControlLib.Admin
             return dtUsuario;
         }
 
-        //public void InsertarUsuarioLib(string NomCom, string Apellido, int NumDoc, string Login, string Contra, bool Activo, string TipoDoc, string Rol)
-        //{
-        //    TotalControlDal.Usuario objInsertar = new TotalControlDal.Usuario();
+        public void InsertarUsuarioLib(string NumDoc, string NomCom, string Apellido, int TipoDoc, int Cargo, int Rol, string Login, string Contra, int NFicha)
+        {
+            TotalControlDal.Usuario objInsertar = new TotalControlDal.Usuario();
 
-        //    objInsertar.InsertarUsuarioDal(NomCom, Apellido, NumDoc, Login, Contra, Activo, TipoDoc, Rol);
-        //}
+            SHA512 objEncriptacion = SHA512Managed.Create();
+            byte[] bytes = Encoding.UTF8.GetBytes(Contra);
+            byte[] hash = objEncriptacion.ComputeHash(bytes);
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < hash.Length; i++)
+            {
+                sb.Append(hash[i].ToString("X2"));
+            }
+            string Contrasena = sb.ToString();
+
+            objInsertar.InsertarUsuarioDal(NumDoc, NomCom, Apellido, TipoDoc, Cargo, Rol, Login, Contrasena, NFicha);
+        }
 
         public void ModificarUsuarioLib(string NomCom, int NumDoc)
         {
@@ -86,5 +96,39 @@ namespace TotalControlLib.Admin
             return dtRol;
         }
 
+        public DataTable FichaProgramaBLL()
+        {
+            TotalControlDal.Usuario objFichaPrograma = new TotalControlDal.Usuario();
+            DataTable dtFichaPrograma = new DataTable();
+            dtFichaPrograma = objFichaPrograma.FichaPrograma();
+            return dtFichaPrograma;
+        }
+        
+        public string ValidaCedulaBLL(string cedula)
+        {
+            TotalControlDal.Usuario objValida = new TotalControlDal.Usuario();
+            string Valida =Convert.ToString(objValida.ValidaCedulaDal(cedula));
+
+            return Valida;
+        }
+
+        public void CambiaPasswordBLL(string cedula, string contrasena)
+        {
+
+            TotalControlDal.Usuario objCambiaPassword = new TotalControlDal.Usuario();
+
+            SHA512 objEncriptacion = SHA512Managed.Create();
+            byte[] bytes = Encoding.UTF8.GetBytes(contrasena);
+            byte[] hash = objEncriptacion.ComputeHash(bytes);
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < hash.Length; i++)
+            {
+                sb.Append(hash[i].ToString("X2"));
+            }
+            string password = sb.ToString();
+
+            objCambiaPassword.CambioPasswordDal(cedula, password);
+
+        }        
     }
 }

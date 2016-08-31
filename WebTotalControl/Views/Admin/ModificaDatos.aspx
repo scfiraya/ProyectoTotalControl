@@ -17,9 +17,7 @@
 
     <div class="text-center">
         <asp:Button ID="btnModificar" runat="server" Text="Modificar datos" CssClass="form-control btn btn-primary" OnClick="btnModificar_Click" />
-    </div>
-     
-     
+    </div>       
 
     <asp:Panel ID="pnlModifica" runat="server" Visible="false">
 
