@@ -97,8 +97,6 @@
     <Content Include="Views\Registro\DetalleIngreso.aspx" />
     <Content Include="Views\Registro\DetalleSalida.aspx" />
     <Content Include="Views\SubirArchivo\DetalleVisitante.aspx" />
-    <Content Include="Views\Registro\DetalleVisitanteIngreso.aspx" />
-    <Content Include="Views\Registro\DetalleVisitanteSalida.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -237,20 +235,6 @@
     </Compile>
     <Compile Include="Views\SubirArchivo\DetalleVisitante.aspx.designer.cs">
       <DependentUpon>DetalleVisitante.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Registro\DetalleVisitanteIngreso.aspx.cs">
-      <DependentUpon>DetalleVisitanteIngreso.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Registro\DetalleVisitanteIngreso.aspx.designer.cs">
-      <DependentUpon>DetalleVisitanteIngreso.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Registro\DetalleVisitanteSalida.aspx.cs">
-      <DependentUpon>DetalleVisitanteSalida.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Registro\DetalleVisitanteSalida.aspx.designer.cs">
-      <DependentUpon>DetalleVisitanteSalida.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Registro\Registro.Master.cs">
       <DependentUpon>Registro.Master</DependentUpon>
