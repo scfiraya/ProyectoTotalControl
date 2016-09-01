@@ -51,7 +51,7 @@ namespace WebTotalControl.Views
             {
    
                 Session["consulta"] = TraerNumFicha;
-                //Response.Redirect("DetalleFichas.aspx");
+                Response.Redirect("DetalleFichas.aspx");
             }
           
            
